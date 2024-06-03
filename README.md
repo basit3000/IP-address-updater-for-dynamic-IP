@@ -3,11 +3,11 @@
 This Python script updates a Google Sheets document with your current public IP address every 60 seconds. It uses the ipify API to get the public IP address and the gspread library to interact with Google Sheets.
 ## Prerequisites
 
-    - Python 3.x
-    - Required Python packages:
-        - requests
-        - gspread
-        - oauth2client
+- Python 3.x
+- Required Python packages:
+    - requests
+    - gspread
+    - oauth2client
 
 ## Setup
 
@@ -44,7 +44,7 @@ This Python script updates a Google Sheets document with your current public IP 
 
         sheet = client.open('minecraft IP').sheet1
 
-        Replace 'minecraft IP' with the name of your Google Sheet.
+        #Replace 'minecraft IP' with the name of your Google Sheet.
     ```
 ## Running the Script
 
@@ -57,15 +57,15 @@ python ip_updater.py
 
 The script will:
 
-    1. Retrieve your public IP address from ipify.
-    2. Update the first cell (A1) of your specified Google Sheet with the current IP address.
-    3. Repeat the process every 60 seconds.
+1. Retrieve your public IP address from ipify.
+2. Update the first cell (A1) of your specified Google Sheet with the current IP address.
+3. Repeat the process every 60 seconds.
 
 
 ## Notes
 
-    - Ensure that your internet connection is active for the script to fetch the IP address and update the Google Sheet.
-    - If the internet connection is down, the script will print "Internet is down currently."
+- Ensure that your internet connection is active for the script to fetch the IP address and update the Google Sheet.
+- If the internet connection is down, the script will print "Internet is down currently."
 
 ## License
 
